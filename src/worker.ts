@@ -8,7 +8,11 @@ export default {
   async fetch(request: Request, env: Env): Promise<Response> {
     const url = new URL(request.url)
 
-    url.pathname = url.pathname.replace(/^\/(kmtow-test-page|kmtow)/, '') || '/'
+    const prefix = '/kmtow-test-page'
+    
+    if (url.pathname.startsWith(prefix)) {
+      url.pathname = url.pathname.slice(prefix.length) || '/'
+    }
 
     return env.ASSETS.fetch(new Request(url, request))
   },
