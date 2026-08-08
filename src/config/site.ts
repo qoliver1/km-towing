@@ -32,7 +32,7 @@ export interface FAQItem {
 export const siteConfig = {
   business: {
     name: 'K&M Towing',
-    ownerName: 'Klye Engevik',
+    ownerName: 'Kyle Engevik',
     phone: '763-951-9563',
     phoneDisplay: '763-951-9563',
     tagline: 'Anytime. Anywhere. One Call & I\'m There.',
