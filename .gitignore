@@ -27,4 +27,4 @@ npm-debug.log*
 pexels downloads/
 
 # Misc
-*.local
+*.local.env.production
