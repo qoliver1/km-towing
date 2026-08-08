@@ -4,7 +4,7 @@
  * Original high-res AVIFs are in "pexels downloads/" folder.
  */
 
-const basePath = '/km-towing';
+const basePath = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 const photoMap: Record<string, string> = {
   'tow truck helping car on highway roadside': `${basePath}/images/hero-light-towing.webp`,
